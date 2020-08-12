@@ -23,21 +23,22 @@ const users = [
 const usersByLastName = idxd(users, 'lastName');
 /* =>
 {
-  '001': {
+  'Chrysostom': {
+    id: '001',
     firstName: 'John',
-    lastName: 'Chrysostom',
   },
-  '002': {
+  'the Great': {
+    id: '002',
     firstName: 'Basil',
     lastName: 'the Great',
   },
-  '003': {
+  'of Nyssa': {
+    id: '003',
     firstName: 'Gregory',
-    lastName: 'of Nyssa',
   },
-  '004': {
+  'the Syrian': {
+    id: '004',
     firstName: 'Ephrem',
-    lastName: 'the Syrian',
   }
 }
 */
