@@ -23,7 +23,7 @@ test('idxd - indexes list by given key', (t) => {
       name: 'Macrina',
     },
   };
-  t.deepEqual(idxd('id', input), expected);
+  t.deepEqual(idxd(input, 'id'), expected);
 });
 
 test('idxd - when the value of the `key` is the same of two objects, the last will be used', (t) => {
@@ -44,5 +44,5 @@ test('idxd - when the value of the `key` is the same of two objects, the last wi
       name: 'Macrina',
     },
   };
-  t.deepEqual(idxd('id', input), expected);
+  t.deepEqual(idxd(input, 'id'), expected);
 });
