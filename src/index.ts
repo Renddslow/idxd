@@ -1,6 +1,8 @@
-export default (list: Array<Record<any, any>>, key: string) =>
-  list.reduce((acc, val) => {
-    const { [key]: id, ...content } = val;
-    acc[id] = content;
-    return acc;
-  }, {});
+export default <K extends string, D extends Record<K, string>>(list: D[], key: K) =>
+  list.reduce(
+    (acc, { [key]: id, ...contents }) => ({
+      ...acc,
+      [id]: contents,
+    }),
+    {},
+  );

@@ -1,6 +1,6 @@
 # idxd
 
-> A tiny (90 bytes) function for indexing arrays of objects by some key.
+> A tiny (81 bytes) function for indexing arrays of objects by some key.
 
 ## Install
 
